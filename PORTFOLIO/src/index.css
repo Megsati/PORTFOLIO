@@ -1,3 +1,15 @@
 @import "tailwindcss";
+@theme{
+    --breakpoint-tablet:768px;
+    --breakpoint-mobile:500px;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@layer base{
+    html{
+        scroll-behavior: smooth;
+    }
+}
 
