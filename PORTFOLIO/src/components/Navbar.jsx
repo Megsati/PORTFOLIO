@@ -19,7 +19,7 @@ const Navbar = () => {
       {/* <h1>This is the nav</h1> */}
 
       
-         <nav className= " fixed top-0 left-0 w-full shadow-md bg-red-200"> 
+         <nav className= " fixed top-0 left-0 w-full shadow-md bg-gray-100"> 
             <div className= "max-w-6xl mx-auto px-4 py-3 flex  items-center max-tablet:px-0 max-tablet:py-7 max-tablet:justify-evenly">
                 <h1 className= "font-bold text-xl"> </h1>
                 <ul className= "w-1/3 flex justify-between items-center space-x-6">

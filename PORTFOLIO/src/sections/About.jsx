@@ -4,9 +4,9 @@ const About = () => {
   return (
     <div>
     <section id= "about" 
-    className= "min-h-screen text-black   bg-red-400 flex  items-center justify-center">
+    className= "min-h-screen text-black   bg-purple-300 flex  items-center justify-center">
       <div className= " max-w-3l text-center px-4">
-      <h1 className= "  bg-blue-200 rounded-lg text-3xl font-bold mb-4">About Me</h1>
+      <h1 className= "  bg-purple-200 rounded-lg text-3xl font-bold mb-4">About Me</h1>
         <div className= "">
              <p className= " flex justify-center font-bold max-w-md text-lg text-gray-900">Magdalene is a tech enthusiast 
               whose interest is centered around providing scalable solutions by using technology to
