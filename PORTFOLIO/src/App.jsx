@@ -3,7 +3,9 @@ import Navbar from './components/Navbar'
 import Home from "../src/sections/Home"
 import About from "../src/sections/About"
 import Contact from "../src/sections/Contact";
-import Project from "../src/sections/Project"
+import Project from './sections/Project';
+
+
 
 
 const App = () => {
@@ -12,8 +14,9 @@ const App = () => {
       <Navbar/>
       <Home/>
       <About/>
-      <Contact/>
       <Project/>
+      <Contact/>
+    
       
 
       

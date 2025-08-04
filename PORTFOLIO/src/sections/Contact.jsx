@@ -1,5 +1,6 @@
 import React from 'react';
 import { Facebook, Linkedin, Mail, Phone, Send } from 'lucide-react';
+import { Link } from 'react-scroll';
 
 const Contact = () => {
   return (
@@ -52,7 +53,7 @@ const Contact = () => {
                   href="https://facebook.com/satimagdalene"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-purple-600 text-white p-3 rounded-full hover:bg-pink-700 transition"
+                  className="bg-purple-800 text-white p-3 rounded-full hover:bg-pink-800 transition"
                 >
                   <Facebook />
                 </a>
@@ -64,8 +65,22 @@ const Contact = () => {
                 >
                   <Linkedin />
                 </a>
+                 {/* Link to project Section */}
+          <div className="mt-6">
+          </div>
               </div>
             </div>
+            <div  className="flex flex-col justify-center items-center ">'            
+                        {/* project Link */}
+                        <Link
+                          to="project"
+                          smooth={true}
+                          duration={500}
+                          className="mt-6 inline-block bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-purple-800 cursor-pointer transition"
+                        >
+                         View my Projects
+                        </Link>
+                        </div>
           </div>
         </div>
       </section>

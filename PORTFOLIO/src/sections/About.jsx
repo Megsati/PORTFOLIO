@@ -23,14 +23,14 @@ const About = () => {
               collaboration. She is enthusiastic about product and project management.
             </p>
 
-            {/* Contact Link */}
+            {/* project Link */}
             <Link
               to="contact"
               smooth={true}
               duration={500}
               className="mt-6 inline-block bg-purple-700 text-white px-4 py-2 rounded-lg hover:bg-purple-800 cursor-pointer transition"
             >
-              Contact Me
+              my projects
             </Link>
           </div>
         </div>
