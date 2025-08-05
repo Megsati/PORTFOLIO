@@ -1,10 +1,9 @@
-import { Link } from 'react-scroll'
+import { Link } from 'react-scroll';
 import { Menu, X } from 'lucide-react';
 import React, { useState } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navLinks = [
@@ -15,32 +14,25 @@ const Navbar = () => {
   ];
 
   return (
-    <div className=''>
-      {/* <h1>This is the nav</h1> */}
+    <nav className="fixed top-0 left-0 w-full shadow-md bg-indigo-50 z-50">
+      <div className="max-w-6xl mx-auto px-4 py-3 flex justify-center items-center">
+        <ul className="flex space-x-4 items-center text-indigo-900 font-semibold">
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <Link
+                to={link.to}
+                smooth={true}
+                duration={500}
+                className="cursor-pointer hover:text-slate-900 transition"
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
+  );
+};
 
-      
-         <nav className= " fixed top-0 left-0 w-full shadow-md bg-gray-100"> 
-            <div className= "max-w-6xl mx-auto px-4 py-3 flex  items-center max-tablet:px-0 max-tablet:py-7 max-tablet:justify-evenly">
-                <h1 className= "font-bold text-xl"> </h1>
-                <ul className= "w-1/3 flex justify-between items-center space-x-6">
-      
-                 <Link to= "home"  smooth duration={500}
-                 className= "cursor-pointer hover:pink-300"><li>
-                  Home</li></Link>
-                 <Link to= "about" smoooth duration={500} className= "cursor-pointer hover:hotpink-300"><li>About</li></Link>
-                 <Link to= "contact" smoooth duration={500} className= "cursor-pointer hover:hotpink-300"><li>Contact</li></Link>
-                 <Link to= "project" smoooth duration={500} className= "cursor-pointer hover:hotpink-300"><li>Project</li></Link>
-
-                    
-                    
-                     
-                </ul>
-
-            </div>
-        </nav> 
-      
-    </div>
-  )
-}
-
-export default Navbar
+export default Navbar;
